@@ -1,0 +1,5 @@
+PORT=7000
+
+
+JWT_SECRET=jwtsecretkey
+JWT_EXPIRE=1h
