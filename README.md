@@ -12,10 +12,10 @@ npm run start
 ```
 
 
-### ROUTES
+# ROUTES
 ## 1. User Management
 
-# POST: localhost:7000/api/users/register
+### POST: localhost:7000/api/users/register
 Request: JSON (body)
 {
     "email":"test1@yopmail.com",
@@ -31,7 +31,7 @@ Reponse: {
 }
 
 
-# POST: localhost:7000/api/users/login
+### POST: localhost:7000/api/users/login
 Request: JSON (body)
 {
     "email":"test1@yopmail.com",
@@ -49,7 +49,7 @@ Reponse: {
 }
 
 
-#  GET: localhost:7000/api/users/profile
+### GET: localhost:7000/api/users/profile
 Request: Added Bearer Token in Authorization
 example "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMDA1NjU1NSwiZXhwIjoxNzMwMDYwMTU1fQ.Lyro17AkRzhrvJNNaY77ntMcSqWh1sp5HQ37zkq18Qw"
 Reponse: {
@@ -63,7 +63,7 @@ Reponse: {
 
 ## 2. User Management
 
-# POST: localhost:7000/api/chats
+### POST: localhost:7000/api/chats
 Request: JSON (body) WITH Bearer Token
 {
     "name":"Test Chat",
@@ -77,7 +77,7 @@ Reponse: {
     "createdAt": "2024-10-27T19:50:46.887Z"
 }
 
-# GET: localhost:7000/api/chats
+### GET: localhost:7000/api/chats
 Request: WITH Bearer Token
 
 Reponse: [
@@ -105,7 +105,7 @@ Reponse: [
     }
 ]
 
-# GET: localhost:7000/api/chats/:chatId example(1) localhost:7000/api/chats/1
+### GET: localhost:7000/api/chats/:chatId example(1) localhost:7000/api/chats/1
 Request: WITH Bearer Token
 
 Reponse: {
@@ -131,7 +131,7 @@ Reponse: {
 
 ## 3. Messaging
 
-# POST: localhost:7000/api/chats/1/messages
+### POST: localhost:7000/api/chats/1/messages
 Request: JSON (body) WITH Bearer Token
 {
     "message":"First Message"
@@ -146,7 +146,7 @@ Reponse: {
     "createdAt": "2024-10-27T20:30:36.641Z"
 }
 
-# GET: localhost:7000/api/chats/1/messages?page=1
+### GET: localhost:7000/api/chats/1/messages?page=1
 Request: WITH Bearer Token
 
 Reponse: [
